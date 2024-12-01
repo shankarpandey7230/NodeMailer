@@ -5,7 +5,7 @@ POST http://localhost:8000
 Content-Type: application/json
 
 {
-    "to":"receiver@example.com",
+    "to":"shankarlmachaurko@gmail.com",
     "subject":"test ",
     "message":"you ok"
 

@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import 'dotenv/config';
 // SMTP configuration
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
+  host: 'smtp.gmail.com',
   port: 587,
   auth: {
     user: process.env.EMAIL_USER,
@@ -21,7 +21,7 @@ const emailProcess = async (templateObj) => {
 export const updateUserTemplate = () => {
   const obj = {
     from: '"Shankar 👻" <corene.grady@ethereal.email>', // sender address
-    to: 'corene.grady@ethereal.email', // list of receivers
+    to: 'shankarlamachaurko@gmail.com', // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Hello world?', // plain text body
     html: '<b>Hello world?</b>', // html body
